@@ -92,13 +92,13 @@ $('.header-mobile .right').click(function () {
 
 $('.list-item').each(function () {
     $(this).find('.view-ap').click(function () {
-        var height = $(this).parents('.list-item').find('.item-wrap').height();
+        // var height = $(this).parents('.list-item').find('.item-wrap').height();
         if($(this).parents('.list-item').hasClass('active')) {
-            $(this).parents('.list-item').removeClass('active');
+            $(this).parents('.list-item').removeClass('active').end().removeClass('active');
             //$(this).parents('.list-item').css('height', height + 'px').css('oveflow', 'hidden');
 
         } else {
-            $(this).parents('.list-item').addClass('active');
+            $(this).parents('.list-item').addClass('active').end().addClass('active');
             //$(this).parents('.list-item').css('height', 'auto').css('oveflow', 'auto');
         }
 
@@ -107,6 +107,7 @@ $('.list-item').each(function () {
 
 $('.close-apartaments-block').click(function () {
     $(this).parents('.list-item').removeClass('active');
+    $('.view-ap').removeClass('active');
 });
 
 $('#filter .owl-carousel').owlCarousel({
@@ -124,3 +125,12 @@ $('#filter .owl-carousel').owlCarousel({
     },
   }
 });
+
+(function() {
+  var position = $(window).scrollTop();
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    (scroll > position && $(window).scrollTop() >= 100) ? $('#search').addClass('on') : $('#search').removeClass('on');
+    position = scroll;
+  });
+})();
