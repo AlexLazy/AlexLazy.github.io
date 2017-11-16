@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+ <script>
+   !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);
+  </script>
+	<script>
+
+
+      $('document').ready(function(){
+	  $(function() {
+         $('.ui-slider-handle').draggable();
+	    $( "#slider-range" ).slider({
+	      // orientation: "vertical",
+	      // step: 15,
+	      range: true,
+	      min: 0,
+	      max: 1000,
+	      values: [ 75, 300 ],
+	      slide: function( event, ui ) {
+	        $( "#amount" ).val( ui.values[ 0 ] );
+	        $( "#amount_1" ).val( ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+	    $( "#amount_1" ).val( $( "#slider-range" ).slider( "values", 1 ) );
+
+	    // Изменение местоположения ползунка при вводиде данных в первый элемент input
+		  $("input#amount").change(function(){
+		  	var value1=$("input#amount").val();
+		  	var value2=$("input#amount_1").val();
+		      if(parseInt(value1) > parseInt(value2)){
+		  		value1 = value2;
+		  		$("input#amount").val(value1);
+		  	}
+		  	$("#slider-range").slider("values",0,value1);
+		  });
+
+		  // Изменение местоположения ползунка при вводиде данных в второй элемент input
+		  $("input#amount_1").change(function(){
+		  	var value1=$("input#amount").val();
+		  	var value2=$("input#amount_1").val();
+
+		  	if(parseInt(value1) > parseInt(value2)){
+		  		value2 = value1;
+		  		$("input#amount_1").val(value2);
+		  	}
+		  	$("#slider-range").slider("values",1,value2);
+		  });
+
+		  // фильтрация ввода в поля
+			jQuery('#amount, #amount_1').keypress(function(event){
+				var key, keyChar;
+				if(!event) var event = window.event;
+
+				if (event.keyCode) key = event.keyCode;
+				else if(event.which) key = event.which;
+
+				if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+				keyChar=String.fromCharCode(key);
+
+				if(!/\d/.test(keyChar))	return false;
+
+			});
+
+	  });
+        })
+  </script>
+</head>
+<body>
+  <header class="header"></header>
+  <div class="wrap">
+    <div class="main1">
+      <div class="head">
+        <div class="head__btn">отправить по почте  или по смс</div>
+        <div class="head__btn">перенести</div>
+        <div class="head__btn">+ еще клиент</div>
+
+        <div style="float: right" class="noright">
+        <div class="head__select ">
+<select>
+  <option>Пункт 1</option>
+  <option>Пункт 2</option>
+</select></div>
+        <div class="head__text">Выберите статус</div>
+
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="clear"></div>
+      <div class="main1__content">
+        <div class="section">
+        <div class="section__h">отправить по почте</div>
+        <div class="section__hfloat">
+          <div class="hfloat__left">выберите почту для отправки письма</div>
+          <div class="hfloat__right">+ добавить почту</div>
+        </div>
+        <div class="floater">
+          <div class="floater__left">
+            <table >
+             <tr style="background: transparent">
+              <th></th>
+              <th>E-mail    </th>
+              <th>Комментарии</th>
+             </tr>
+             <tr><td><input type="checkbox"></td><td>timenhome@gmail.com   </td><td>Основной</td></tr>
+             <tr><td><input type="checkbox" ></td><td>timenhome@gmail.com   </td><td>Основной</td></tr>
+             <tr><td><input type="checkbox"></td><td>timenhome@gmail.com   </td><td>Основной</td></tr>
+             <tr><td><input type="checkbox"></td><td>timenhome@gmail.com   </td><td>Основной</td></tr>
+            </table>
+          </div>
+          <div class="floater__right">Для вас подобраны следующие квартиры:
+          <div class="floater__block"><textarea placeholder="Тут будет ссылка на подборку... А так же пользователь может добавить комментарий"></textarea></div>
+          </div>
+          <div class="clear"></div>
+        </div></div>
+        <div class="section"><div class="section__h">отправить по смс</div>
+        <div class="section__hfloat">
+          <div class="hfloat__left">выберите телефон для отправки смс</div>
+          <div class="hfloat__right">+ добавить телефон</div>
+        </div>
+        <div class="floater">
+          <div class="floater__left">
+            <table >
+             <tr style="background: transparent">
+              <th></th>
+              <th>E-mail    </th>
+              <th>Комментарии</th>
+             </tr>
+             <tr><td><input type="checkbox"></td><td>+7 (952) 555 22 55         </td><td>Основной</td></tr>
+             <tr class="tr"><td><input type="checkbox"></td><td>+7 (952) 555 22 55         </td><td>Основной</td></tr>
+
+            </table>
+          </div>
+          <div class="floater__right">Для вас подобраны следующие квартиры:
+          <div class="floater__block">
+          <textarea placeholder="Тут будет ссылка на подборку... А так же пользователь может добавить комментарий не более 300 символов"></textarea>
+          </div>
+          </div>
+          <div class="clear"></div>
+        </div></div>
+        <div class="section">
+          <div class="masonry">
+              <p>
+                <label for="amount">прибавляемая цена к цене объекта, тыс. руб. </label>
+                <input type="text" id="amount"> -
+                <input type="text" id="amount_1">
+              </p>
+              <div class="progresser">
+              <div id="slider-range">
+               <div class="vert_1 vert"></div>
+               <div class="vert_2 vert"></div>
+               <div class="vert_3 vert"></div>
+               <div class="vert_4 vert"></div>
+               <div class="vert_5 vert"></div>
+               <div class="vert_6 vert"></div>
+               <div class="vert_7 vert"></div>
+               <div class="vert_8 vert"></div>
+               <div class="vert_9 vert"></div>
+               <div class="vert_10 vert"></div>
+               <div class="vert_11 vert"></div>
+               <div class="vert_12 vert"></div>
+               <div class="vert_13 vert"></div>
+               <div class="vert_14 vert"></div>
+               <div class="vert_15 vert"></div>
+               <div class="vert_16 vert"></div>
+               <div class="vert_17 vert"></div>
+               <div class="vert_18 vert"></div>
+               <div class="vert_19 vert"></div>
+               <div class="vert_20 vert"></div>
+               <div class="vert_21 vert"></div>
+                <div class="prog0">0</div>
+                <div class="prog25">250</div>
+                <div class="prog50">500</div>
+                <div class="prog75">750</div>
+                <div class="prog100">1000</div>
+              </div>
+              </div>
+          </div>
+          <div class="buttons">
+            <div class="buttons__btn"><i class="fa fa-envelope-o" aria-hidden="true"></i> отправить</div>
+            <div class="buttons__btn2"> <i class="fa fa-angle-left " aria-hidden="true"></i> вернуться к списку</div>
+          </div>
+     </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
