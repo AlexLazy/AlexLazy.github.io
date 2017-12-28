@@ -56,26 +56,27 @@
     $('html, body').animate({
       scrollTop: $(screens[$(this).data('position')]).offset().top
     }, 500);
-
-    if($('.screen-hidden').offset().top < $(window).scrollTop() &&
-      ($('.screen-hidden').offset().top + $('.screen-hidden').outerHeight()) > $(window).scrollTop()){
-        $('.screener').addClass('hidden')
-    } else {
-      $('.screener').removeClass('hidden')
-    }
   })
 
 
   $(window).on('scroll', function(){
-    if($('.screen-hidden').offset().top < $(window).scrollTop() &&
-      ($('.screen-hidden').offset().top + $('.screen-hidden').outerHeight()) > $(window).scrollTop()){
-        $('.screener').addClass('hidden')
+    var fromTop = $(this).scrollTop()
+
+    var cur = $('.screen').map(function(){
+      if ($(this).offset().top < fromTop + 20)
+        return this;
+    });
+
+    cur = cur[cur.length-1];
+
+    $('.screener .owl-dot').removeClass('active')
+    $('.screener .owl-dot[data-position="'+$(cur).data('index')+'"]').addClass('active')
+
+    if($(cur).hasClass('screen-hidden')){
+      $('.screener').addClass('hidden')
     } else {
       $('.screener').removeClass('hidden')
     }
-
-    console.log($('.screen').offset().top);
-
   })
 
 
