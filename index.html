@@ -19,363 +19,43 @@
     </style>
   </head>
   <body>
-    <main class="screen" id="main" style="background-image:url(img/main-bg.jpg);" data-index="0">
+    <div id="global-wrapper">
       <nav class="screener owl-dots"></nav>
-      <header id="header">
+      <main class="screen" id="main" style="background-image:url(img/main-bg.jpg);" data-index="0">
+        <header id="header">
+          <div class="container-large">
+            <div class="row"><img src="img/logo.png" alt=""/>
+              <button id="mob-menu_btn"></button>
+              <nav>
+                <ul>
+                  <li><a href="#">каталог</a></li>
+                  <li><a href="#">калькулятор</a></li>
+                  <li><a href="#">прайс</a></li>
+                  <li><a href="#">выполненные проекты</a></li>
+                  <li><a href="#">отзывы</a></li>
+                  <li><a href="#">контакты</a></li>
+                </ul>
+              </nav>
+              <div class="contacts"><a class="phone" href="tel:83512420180">8 (351) 242-01-80</a><a class="callback" href="#callback" rel="modal:open">Заказать звонок</a>
+                <p><i class="icon time-small"></i>Работаем 24 часа без выходных</p>
+              </div>
+            </div>
+          </div>
+        </header>
         <div class="container-large">
-          <div class="row"><img src="img/logo.png" alt=""/>
-            <button id="mob-menu_btn"></button>
-            <nav>
-              <ul>
-                <li><a href="#">каталог</a></li>
-                <li><a href="#">калькулятор</a></li>
-                <li><a href="#">прайс</a></li>
-                <li><a href="#">выполненные проекты</a></li>
-                <li><a href="#">отзывы</a></li>
-                <li><a href="#">контакты</a></li>
-              </ul>
-            </nav>
-            <div class="contacts"><a class="phone" href="tel:83512420180">8 (351) 242-01-80</a><a class="callback" href="#callback" rel="modal:open">Заказать звонок</a>
-              <p><i class="icon time-small"></i>Работаем 24 часа без выходных</p>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="container-large">
-        <div class="row">
-          <div class="offer">
-            <h1>Более 400 видов<b>кирпича</b></h1>
-            <p>облицовочный, цокольный, печной<br/>и полнотелый</p>
-            <ul>
-              <li><i class="icon shipping"></i>Доставка в день заказа</li>
-              <li><i class="icon wallet"></i>Оплата по факту доставки</li>
-              <li><i class="icon sber"></i>Рассрочка и кредит</li>
-            </ul>
-          </div>
-          <form>
-            <h4>не хочешь вникать и выбирать нужный кирпич?</h4>
-            <p>Наш специалист проконсультирует вас, сделает точный бесплатный расчет и подберет наиболее подходящий для вас вариант</p>
-            <div class="form-group"><i class="icon account"></i>
-              <div class="input-wrapper">
-                <input type="text" placeholder="Имя"/><span></span>
-              </div>
-            </div>
-            <div class="form-group"><i class="icon phone"></i>
-              <div class="input-wrapper">
-                <input type="tel" placeholder="Телефон"/><span></span>
-              </div>
-            </div>
-            <p class="time"><i class="icon time"></i>Удобное время</p>
-            <div class="form-group time">
-              <div class="quantity">
-                <input type="text" value="1"/><span></span><span class="increase"></span>
-              </div>часов
-              <div class="quantity">
-                <input type="text" value="1"/><span></span><span class="increase"></span>
-              </div>минут
-            </div>
-            <input class="btn" type="submit" value="заказать консультацию"/>
-          </form>
-        </div>
-      </div>
-    </main>
-    <section class="manufacturers"><img src="img/manufacturers1.png"/><img src="img/manufacturers2.png"/><img src="img/manufacturers3.png"/><img src="img/manufacturers4.png"/><img src="img/manufacturers5.png"/><img src="img/manufacturers6.png"/></section>
-    <section class="discounts screen" data-index="1">
-      <div class="container">
-        <header class="section-header">
-          <h2>самые большие скидки<br/>этой недели</h2>
-        </header>
-        <div class="swiper">
-          <div class="swiper_inner">
-                  <div class="card card_discount">
-                    <div class="wrapper">
-                      <figure><img src="img/product1.png" alt=""/></figure>
-                      <h2 class="card__header">Кирпич “КЕММА”</h2>
-                      <p class="card__descr">Шоколад евро</p>
-                      <p class="card__old-price">10,10 ₽</p>
-                      <p class="card__price">8,10 ₽</p><a class="btn" href="#">Оставить заявку</a>
-                    </div>
-                  </div>
-                  <div class="card card_discount">
-                    <div class="wrapper">
-                      <figure><img src="img/product2.png" alt=""/></figure>
-                      <h2 class="card__header">Кирпич “КЕММА”</h2>
-                      <p class="card__descr">Словновая кость одинарный</p>
-                      <p class="card__old-price">18,50 ₽</p>
-                      <p class="card__price">16,50 ₽</p><a class="btn" href="#">Оставить заявку</a>
-                    </div>
-                  </div>
-                  <div class="card card_discount">
-                    <div class="wrapper">
-                      <figure><img src="img/product3.png" alt=""/></figure>
-                      <h2 class="card__header">Кирпич “КЕММА”</h2>
-                      <p class="card__descr">Словновая кость евро</p>
-                      <p class="card__old-price">7,40 ₽</p>
-                      <p class="card__price">5,40 ₽</p><a class="btn" href="#">Оставить заявку</a>
-                    </div>
-                  </div>
-                  <div class="card card_discount">
-                    <div class="wrapper">
-                      <figure><img src="img/product4.png" alt=""/></figure>
-                      <h2 class="card__header">Кирпич “УГК”</h2>
-                      <p class="card__descr">Печной одинарный</p>
-                      <p class="card__old-price">11,50 ₽</p>
-                      <p class="card__price">9,50 ₽</p><a class="btn" href="#">Оставить заявку</a>
-                    </div>
-                  </div>
-                  <div class="card card_discount">
-                    <div class="wrapper">
-                      <figure><img src="img/product5.png" alt=""/></figure>
-                      <h2 class="card__header">Блок керамический “УГК”</h2>
-                      <p class="card__descr">10,7 нф</p>
-                      <p class="card__old-price">2702 ₽</p>
-                      <p class="card__price">2700 ₽</p><a class="btn" href="#">Оставить заявку</a>
-                    </div>
-                  </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="why screen" data-index="2">
-      <div class="container">
-        <div class="item" style="background-image:url(img/why1.png);">
-          <h2>почему<br/>кирпич<br/>покупают<br/>в магнум</h2>
-        </div>
-        <div class="item" style="background-image:url(img/why2.jpg);">
-          <p>цены  на кирпич ниже,<br/>чем у конкурентов и заводов</p>
-        </div>
-        <div class="item" style="background-image:url(img/why3.jpg);">
-          <p>профессиональный<br/>инженерный расчет</p>
-        </div>
-        <div class="item" style="background-image:url(img/why4.jpg);">
-          <p>доставка в течении 24 часов</p>
-        </div>
-        <div class="item" style="background-image:url(img/why5.jpg);">
-          <p>Кредит и рассрочка</p>
-        </div>
-        <div class="item" style="background-image:url(img/why6.jpg);">
-          <p>меняем колотый кирпич</p>
-        </div>
-      </div>
-    </section>
-    <section class="catalog screen" data-index="3">
-      <div class="container">
-        <header class="section-header">
-          <h2>Каталог товаров<br/>на складе</h2>
-        </header>
-        <header class="catalog_header">
-          <h3>Облицовочный кирпич</h3>
-        </header>
-        <div class="row">
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “КЕММА”</h2>
-                    <p class="card__descr">31 вид</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
-                    <p class="card__descr">23 вида</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
-                    <p class="card__descr">5 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Ревдинский кирпичный завод</h2>
-                    <p class="card__descr">69 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Брылинский кирпичный завод</h2>
-                    <p class="card__descr">6 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Агаповский кирпич</h2>
-                    <p class="card__descr">3 вида</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-        </div>
-        <header class="catalog_header">
-          <h3>Рядовой кирпич</h3>
-        </header>
-        <div class="row large">
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич полнотелый</h2>
-                    <p class="card__descr">19 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич пустотелый для кладки несущих стен и перегородок</h2>
-                    <p class="card__descr">17 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич цокольный</h2>
-                    <p class="card__descr">18 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич печной</h2>
-                    <p class="card__descr">15 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-        </div>
-        <header class="catalog_header">
-          <h3>Силикатный кирпич</h3>
-        </header>
-        <div class="row">
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “КЕММА”</h2>
-                    <p class="card__descr">31 вид</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
-                    <p class="card__descr">23 вида</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
-                    <p class="card__descr">5 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-        </div>
-        <header class="catalog_header">
-          <h3>Керамический блок</h3>
-        </header>
-        <div class="row">
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “КЕММА”</h2>
-                    <p class="card__descr">31 вид</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
-                    <p class="card__descr">23 вида</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="wrapper">
-                    <figure><img src="img/product6.png" alt=""/></figure>
-                    <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
-                    <p class="card__descr">5 видов</p>
-                    <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
-                  </div>
-                </div>
-        </div>
-      </div>
-    </section>
-    <section class="calculation screen screen-hidden" style="background-image:url(img/calculation-bg.png);" data-index="4">
-      <div class="container">
-        <header class="section-header">
-          <h2>расчет<br/>кирпичной кладки</h2>
-        </header>
-        <form>
-          <div class="col">
-            <div class="form-group">
-              <h3>Размер дома</h3>
-            </div>
-            <div class="form-group">
-              <p>Общая длина стен</p>
-              <input type="text" value="0"/><span>метров</span>
-            </div>
-            <div class="form-group">
-              <p>Общая высота стен</p>
-              <input type="text" value="0"/><span>метров</span>
-            </div>
-            <div class="form-group">
-              <p>Площадь дверных и<br/>оконых проемов</p>
-              <input type="text" value="0"/><span>м2</span>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-group select">
-              <h3>Кладка</h3>
-              <select class="chosen-select">
-                <option>в полкирпича</option>
-                <option>в один кирпич</option>
-                <option>в полтора кирпича</option>
-                <option>в два кирпича</option>
-                <option>в два с половиной кирпича</option>
-              </select>
-            </div>
-            <div class="calculation-img"><img src="img/calc1.jpg"/><img src="img/calc2.jpg"/><img src="img/calc3.jpg"/><img src="img/calc4.jpg"/><img src="img/calc5.jpg"/></div>
-          </div>
-          <div class="col">
-            <div class="form-group select">
-              <h3>Кирпич</h3>
-              <select class="chosen-select">
-                <option>Одинарный (120x250x65)</option>
-                <option>Одинарный (120x250x65)</option>
-                <option>Одинарный (120x250x65)</option>
-                <option>Одинарный (120x250x65)</option>
-              </select>
-            </div>
-          </div>
           <div class="row">
-            <input class="btn" type="submit" value="получить расчет"/>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="inline-offer-1 screen" style="background-image:url(img/inline-offer-1-bg.jpg);" data-index="5">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <header class="section-header">
-              <h2>Не можешь найти время<span>что бы приехать к нам в офис<br/>и выбрать кирпич?</span></h2>
-            </header>
-            <p class="header_descr">тогда закажи курьера<br/>с образцами кирпича на дом!</p>
+            <div class="offer">
+              <h1>Более 400 видов<b>кирпича</b></h1>
+              <p>облицовочный, цокольный, печной<br/>и полнотелый</p>
+              <ul>
+                <li><i class="icon shipping"></i>Доставка в день заказа</li>
+                <li><i class="icon wallet"></i>Оплата по факту доставки</li>
+                <li><i class="icon sber"></i>Рассрочка и кредит</li>
+              </ul>
+            </div>
             <form>
-              <p>Оставь заявку, и мы привезем все образцы кирпича в любое удобное время и место</p>
+              <h4>не хочешь вникать и выбирать нужный кирпич?</h4>
+              <p>Наш специалист проконсультирует вас, сделает точный бесплатный расчет и подберет наиболее подходящий для вас вариант</p>
               <div class="form-group"><i class="icon account"></i>
                 <div class="input-wrapper">
                   <input type="text" placeholder="Имя"/><span></span>
@@ -386,122 +66,444 @@
                   <input type="tel" placeholder="Телефон"/><span></span>
                 </div>
               </div>
-              <input class="btn" type="submit" value="оставить заявку"/>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="inline-offer-2 screen" style="background-image:url(img/inline-offer-2-bg.jpg);" data-index="6">
-      <div class="container">
-        <header class="section-header">
-          <h2>акция</h2>
-        </header>
-        <div class="row">
-          <div class="col">
-            <h3>при покупке кирпича<br/>дополнительная<br/>скидка<img src="img/10percent.png"/>на:</h3><a class="btn" href="#">участвовать в акции</a>
-          </div>
-          <div class="col">
-            <ul>
-              <li><i class="icon check"></i>цветную затирку для швов</li>
-              <li><i class="icon check"></i>инструмент</li>
-              <li><i class="icon check"></i>армирующую сетку</li>
-            </ul>
-            <ul>
-              <li><i class="icon check"></i>кладочную смесь</li>
-              <li><i class="icon check"></i>цемент</li>
-              <li><i class="icon check"></i>песок</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="inline-offer-3 screen" style="background-image:url(img/inline-offer-3-bg.jpg);" data-index="7">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <header class="section-header">
-              <h2>не нашли что искали?<span>Посмотрите полный прайс-лист<br/>на продукцию</span></h2>
-            </header>
-            <p class="header_descr"><i class="icon check"></i>Оставьте заявку и получите<br/>прайс-лист в течение 5 минут</p><a class="btn" href="#">получить прайс-лист</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="questions screen" data-index="8">
-      <div class="container">
-        <header class="section-header">
-          <h2>часто задаваемые<br/>вопросы</h2>
-        </header>
-        <article class="dropdown">
-          <header><span>01.</span>
-            <h4>Почему цены в Магнум ниже, чем у других торгующих организаций и даже чем у заводов изготовителей?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>02.</span>
-            <h4>Что делать, если привезли кирпич не надлежащего качества, например со сколами переливами по цвету?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>03.</span>
-            <h4>Может ли клиент самостоятельно выбрать дату и время отгрузки?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>04.</span>
-            <h4>Можно ли оплатить продукцию на месте?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>05.</span>
-            <h4>Что делать если у меня нет времени, что бы подъехать в офис и выбрать необходимый кирпич?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>06.</span>
-            <h4>Что делать если не хватило кирпича? </h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article>
-        <article class="dropdown">
-          <header><span>07.</span>
-            <h4>Могу ли я консультироваться у сотрудников вашей компании по общестроительным вопросам?</h4><i class="icon arrow"></i>
-          </header>
-          <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
-        </article><a class="btn" href="#">задать свой вопрос</a>
-      </div>
-    </section>
-    <section class="inline-offer-4 screen" style="background-image:url(img/inline-offer-4-bg.jpg);" data-index="9">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <header class="section-header">
-              <h2>остались вопросы?<span>оставьте телефон и получите<br/>бесплатную консультацию</span></h2>
-            </header>
-            <form>
-              <div class="form-group"><i class="icon phone"></i>
-                <div class="input-wrapper">
-                  <input type="tel" placeholder="Телефон"/><span></span>
-                </div>
+              <p class="time"><i class="icon time"></i>Удобное время</p>
+              <div class="form-group time">
+                <div class="quantity">
+                  <input type="text" value="1"/><span></span><span class="increase"></span>
+                </div>часов
+                <div class="quantity">
+                  <input type="text" value="1"/><span></span><span class="increase"></span>
+                </div>минут
               </div>
-              <input class="btn" type="submit" value="оставить заявку"/>
+              <input class="btn" type="submit" value="заказать консультацию"/>
             </form>
           </div>
         </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <div class="container"><img src="img/logo-footer.png" alt=""/>
-        <p>© 2017, “МАГНУМ”.<br/>Продажа строительных материалов<br/>по самым выгодным ценам</p>
-      </div>
-    </footer>
-    <div class="modal" id="callback" style="display:none;"></div>
+      </main>
+      <section class="manufacturers"><img src="img/manufacturers1.png"/><img src="img/manufacturers2.png"/><img src="img/manufacturers3.png"/><img src="img/manufacturers4.png"/><img src="img/manufacturers5.png"/><img src="img/manufacturers6.png"/></section>
+      <section class="discounts screen" data-index="1">
+        <div class="container">
+          <header class="section-header">
+            <h2>самые большие скидки<br/>этой недели</h2>
+          </header>
+          <div class="swiper">
+            <div class="swiper_inner">
+                      <div class="card card_discount">
+                        <div class="wrapper">
+                          <figure><img src="img/product1.png" alt=""/></figure>
+                          <h2 class="card__header">Кирпич “КЕММА”</h2>
+                          <p class="card__descr">Шоколад евро</p>
+                          <p class="card__old-price">10,10 ₽</p>
+                          <p class="card__price">8,10 ₽</p><a class="btn" href="#">Оставить заявку</a>
+                        </div>
+                      </div>
+                      <div class="card card_discount">
+                        <div class="wrapper">
+                          <figure><img src="img/product2.png" alt=""/></figure>
+                          <h2 class="card__header">Кирпич “КЕММА”</h2>
+                          <p class="card__descr">Словновая кость одинарный</p>
+                          <p class="card__old-price">18,50 ₽</p>
+                          <p class="card__price">16,50 ₽</p><a class="btn" href="#">Оставить заявку</a>
+                        </div>
+                      </div>
+                      <div class="card card_discount">
+                        <div class="wrapper">
+                          <figure><img src="img/product3.png" alt=""/></figure>
+                          <h2 class="card__header">Кирпич “КЕММА”</h2>
+                          <p class="card__descr">Словновая кость евро</p>
+                          <p class="card__old-price">7,40 ₽</p>
+                          <p class="card__price">5,40 ₽</p><a class="btn" href="#">Оставить заявку</a>
+                        </div>
+                      </div>
+                      <div class="card card_discount">
+                        <div class="wrapper">
+                          <figure><img src="img/product4.png" alt=""/></figure>
+                          <h2 class="card__header">Кирпич “УГК”</h2>
+                          <p class="card__descr">Печной одинарный</p>
+                          <p class="card__old-price">11,50 ₽</p>
+                          <p class="card__price">9,50 ₽</p><a class="btn" href="#">Оставить заявку</a>
+                        </div>
+                      </div>
+                      <div class="card card_discount">
+                        <div class="wrapper">
+                          <figure><img src="img/product5.png" alt=""/></figure>
+                          <h2 class="card__header">Блок керамический “УГК”</h2>
+                          <p class="card__descr">10,7 нф</p>
+                          <p class="card__old-price">2702 ₽</p>
+                          <p class="card__price">2700 ₽</p><a class="btn" href="#">Оставить заявку</a>
+                        </div>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why screen" data-index="2">
+        <div class="container">
+          <div class="item" style="background-image:url(img/why1.png);">
+            <h2>почему<br/>кирпич<br/>покупают<br/>в магнум</h2>
+          </div>
+          <div class="item" style="background-image:url(img/why2.jpg);">
+            <p>цены  на кирпич ниже,<br/>чем у конкурентов и заводов</p>
+          </div>
+          <div class="item" style="background-image:url(img/why3.jpg);">
+            <p>профессиональный<br/>инженерный расчет</p>
+          </div>
+          <div class="item" style="background-image:url(img/why4.jpg);">
+            <p>доставка в течении 24 часов</p>
+          </div>
+          <div class="item" style="background-image:url(img/why5.jpg);">
+            <p>Кредит и рассрочка</p>
+          </div>
+          <div class="item" style="background-image:url(img/why6.jpg);">
+            <p>меняем колотый кирпич</p>
+          </div>
+        </div>
+      </section>
+      <section class="catalog screen" data-index="3">
+        <div class="container">
+          <header class="section-header">
+            <h2>Каталог товаров<br/>на складе</h2>
+          </header>
+          <header class="catalog_header">
+            <h3>Облицовочный кирпич</h3>
+          </header>
+          <div class="row">
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “КЕММА”</h2>
+                        <p class="card__descr">31 вид</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
+                        <p class="card__descr">23 вида</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
+                        <p class="card__descr">5 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Ревдинский кирпичный завод</h2>
+                        <p class="card__descr">69 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Брылинский кирпичный завод</h2>
+                        <p class="card__descr">6 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Агаповский кирпич</h2>
+                        <p class="card__descr">3 вида</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+          </div>
+          <header class="catalog_header">
+            <h3>Рядовой кирпич</h3>
+          </header>
+          <div class="row large">
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич полнотелый</h2>
+                        <p class="card__descr">19 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич пустотелый для кладки несущих стен и перегородок</h2>
+                        <p class="card__descr">17 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич цокольный</h2>
+                        <p class="card__descr">18 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич печной</h2>
+                        <p class="card__descr">15 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+          </div>
+          <header class="catalog_header">
+            <h3>Силикатный кирпич</h3>
+          </header>
+          <div class="row">
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “КЕММА”</h2>
+                        <p class="card__descr">31 вид</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
+                        <p class="card__descr">23 вида</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
+                        <p class="card__descr">5 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+          </div>
+          <header class="catalog_header">
+            <h3>Керамический блок</h3>
+          </header>
+          <div class="row">
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “КЕММА”</h2>
+                        <p class="card__descr">31 вид</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “УРАЛГЛАВКЕРАМИКА”</h2>
+                        <p class="card__descr">23 вида</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="wrapper">
+                        <figure><img src="img/product6.png" alt=""/></figure>
+                        <h2 class="card__header">Кирпич “ВЗКСМ”</h2>
+                        <p class="card__descr">5 видов</p>
+                        <p class="card__price">от 8,10 ₽ факт.шт.</p><a class="btn" href="#">Оставить заявку</a><a class="btn btn_underline" href="#">Посмотреть все виды</a>
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="calculation screen screen-hidden" style="background-image:url(img/calculation-bg.png);" data-index="4">
+        <div class="container">
+          <header class="section-header">
+            <h2>расчет<br/>кирпичной кладки</h2>
+          </header>
+          <form>
+            <div class="col">
+              <div class="form-group">
+                <h3>Размер дома</h3>
+              </div>
+              <div class="form-group">
+                <p>Общая длина стен</p>
+                <input type="text" value="0"/><span>метров</span>
+              </div>
+              <div class="form-group">
+                <p>Общая высота стен</p>
+                <input type="text" value="0"/><span>метров</span>
+              </div>
+              <div class="form-group">
+                <p>Площадь дверных и<br/>оконых проемов</p>
+                <input type="text" value="0"/><span>м2</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group select">
+                <h3>Кладка</h3>
+                <select class="chosen-select">
+                  <option>в полкирпича</option>
+                  <option>в один кирпич</option>
+                  <option>в полтора кирпича</option>
+                  <option>в два кирпича</option>
+                  <option>в два с половиной кирпича</option>
+                </select>
+              </div>
+              <div class="calculation-img"><img src="img/calc1.jpg"/><img src="img/calc2.jpg"/><img src="img/calc3.jpg"/><img src="img/calc4.jpg"/><img src="img/calc5.jpg"/></div>
+            </div>
+            <div class="col">
+              <div class="form-group select">
+                <h3>Кирпич</h3>
+                <select class="chosen-select">
+                  <option>Одинарный (120x250x65)</option>
+                  <option>Одинарный (120x250x65)</option>
+                  <option>Одинарный (120x250x65)</option>
+                  <option>Одинарный (120x250x65)</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <input class="btn" type="submit" value="получить расчет"/>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="inline-offer-1 screen" style="background-image:url(img/inline-offer-1-bg.jpg);" data-index="5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <header class="section-header">
+                <h2>Не можешь найти время<span>что бы приехать к нам в офис<br/>и выбрать кирпич?</span></h2>
+              </header>
+              <p class="header_descr">тогда закажи курьера<br/>с образцами кирпича на дом!</p>
+              <form>
+                <p>Оставь заявку, и мы привезем все образцы кирпича в любое удобное время и место</p>
+                <div class="form-group"><i class="icon account"></i>
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="Имя"/><span></span>
+                  </div>
+                </div>
+                <div class="form-group"><i class="icon phone"></i>
+                  <div class="input-wrapper">
+                    <input type="tel" placeholder="Телефон"/><span></span>
+                  </div>
+                </div>
+                <input class="btn" type="submit" value="оставить заявку"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inline-offer-2 screen" style="background-image:url(img/inline-offer-2-bg.jpg);" data-index="6">
+        <div class="container">
+          <header class="section-header">
+            <h2>акция</h2>
+          </header>
+          <div class="row">
+            <div class="col">
+              <h3>при покупке кирпича<br/>дополнительная<br/>скидка<img src="img/10percent.png"/>на:</h3><a class="btn" href="#">участвовать в акции</a>
+            </div>
+            <div class="col">
+              <ul>
+                <li><i class="icon check"></i>цветную затирку для швов</li>
+                <li><i class="icon check"></i>инструмент</li>
+                <li><i class="icon check"></i>армирующую сетку</li>
+              </ul>
+              <ul>
+                <li><i class="icon check"></i>кладочную смесь</li>
+                <li><i class="icon check"></i>цемент</li>
+                <li><i class="icon check"></i>песок</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inline-offer-3 screen" style="background-image:url(img/inline-offer-3-bg.jpg);" data-index="7">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <header class="section-header">
+                <h2>не нашли что искали?<span>Посмотрите полный прайс-лист<br/>на продукцию</span></h2>
+              </header>
+              <p class="header_descr"><i class="icon check"></i>Оставьте заявку и получите<br/>прайс-лист в течение 5 минут</p><a class="btn" href="#">получить прайс-лист</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions screen" data-index="8">
+        <div class="container">
+          <header class="section-header">
+            <h2>часто задаваемые<br/>вопросы</h2>
+          </header>
+          <article class="dropdown">
+            <header><span>01.</span>
+              <h4>Почему цены в Магнум ниже, чем у других торгующих организаций и даже чем у заводов изготовителей?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>02.</span>
+              <h4>Что делать, если привезли кирпич не надлежащего качества, например со сколами переливами по цвету?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>03.</span>
+              <h4>Может ли клиент самостоятельно выбрать дату и время отгрузки?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>04.</span>
+              <h4>Можно ли оплатить продукцию на месте?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>05.</span>
+              <h4>Что делать если у меня нет времени, что бы подъехать в офис и выбрать необходимый кирпич?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>06.</span>
+              <h4>Что делать если не хватило кирпича? </h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article>
+          <article class="dropdown">
+            <header><span>07.</span>
+              <h4>Могу ли я консультироваться у сотрудников вашей компании по общестроительным вопросам?</h4><i class="icon arrow"></i>
+            </header>
+            <p>Мы поставляем  кирпич и другие материалы в соответствии c самыми  высокими стандартами качества. В случае если все таки наблюдается несоответствие продукции заявленным требованиям мы в обязательном порядке меняем весь некондиционный материал в течении нескольких дней. При этом все дополнительные затраты мы берем на свои плечи. Данное обязательство закреплено в договоре.</p>
+          </article><a class="btn" href="#">задать свой вопрос</a>
+        </div>
+      </section>
+      <section class="inline-offer-4 screen" style="background-image:url(img/inline-offer-4-bg.jpg);" data-index="9">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <header class="section-header">
+                <h2>остались вопросы?<span>оставьте телефон и получите<br/>бесплатную консультацию</span></h2>
+              </header>
+              <form>
+                <div class="form-group"><i class="icon phone"></i>
+                  <div class="input-wrapper">
+                    <input type="tel" placeholder="Телефон"/><span></span>
+                  </div>
+                </div>
+                <input class="btn" type="submit" value="оставить заявку"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="container"><img src="img/logo-footer.png" alt=""/>
+          <p>© 2017, “МАГНУМ”.<br/>Продажа строительных материалов<br/>по самым выгодным ценам</p>
+        </div>
+      </footer>
+      <div class="modal" id="callback" style="display:none;"></div>
+    </div>
     <link rel="stylesheet" href="css/style.min.css"/>
     <script src="js/vendors.js"></script>
     <script src="js/common.js"></script>
